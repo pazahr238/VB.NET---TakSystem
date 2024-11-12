@@ -1,0 +1,368 @@
+﻿<%@ Master Debug="true"  Language="VB" CodeFile="tmpl.master.vb" Inherits="tmpl" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <!-- Start AD balaye site -->
+    <%--  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+      <script type="text/javascript">var _siteRoot='index.html',_root='index.html';</script>
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/scripts.js"></script>--%>
+    <!-- End AD balaye site -->
+            <script type="text/javascript" src="stmenu.js"></script>
+            
+            <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	        <!-- Start css3menu.com HEAD section -->
+	        <link rel="stylesheet" href="css3menu1/style.css" type="text/css" /><style>._css3m{display:none}</style>
+	        <!-- End css3menu.com HEAD section -->
+            
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            height: 16px;
+            text-align: center;
+        }
+        .style4
+        {
+            height: 144px;
+            text-align: center;
+        }
+        .style5
+        {
+            text-decoration: none;
+        }
+        .style6
+        {
+            height: 1px;
+        }
+        .style7
+        {
+            color: #000066;
+            text-align: center;
+        }
+        #tv
+        {
+            width: 996px;
+        }
+        .auto-style1
+        {
+            width: 65px;
+        }
+        .auto-style2
+        {
+            width: 65px;
+            height: 27px;
+        }
+        .auto-style3
+        {
+            height: 27px;
+        }
+        </style>
+    <!-- Functions of mouse over in main page -->
+    <script type="text/javascript">
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+        function MM_preloadImages() { //v3.0
+            var d = document; if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+            }
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2) ; i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+     </script>
+     <!-- End of Functions of mouse over in main page -->
+</head>
+
+<body background="bk.png" onload="MM_preloadImages('img_thumb_main/conv_over.jpg','img_thumb_main/cable_over.jpg','img_thumb_main/flash_over.jpg','img_thumb_main/battery_over.jpg','img_thumb_main/adaptor_over.jpg','img_thumb_main/hdd_over.jpg','img_thumb_main/antishock_over.jpg','img_thumb_main/fan_over.jpg','img_thumb_main/net_tool_over.jpg','img_thumb_main/internal_card_over.jpg','img_thumb_main/cleaner_over.jpg','img_thumb_main/power_over.jpg','img_thumb_main/tools_over.jpg')">
+
+    <form id="form1" runat="server">
+    <table dir="rtl" 
+        
+        style="font-family: Tahoma; font-size: 12px; width: 1000px;" 
+        align="center">
+        <tr>
+            <td class="style4" colspan="2">
+                <img alt="" src="banner.png" /></td>
+        </tr>
+        <tr>
+        <td colspan="2" style="text-align: center">
+        
+       <!-- Start of Flash TV -->
+       
+        <object
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,42,0"
+        id="tv" width="1000" height="170">
+        <param name="movie" value="tv.swf">
+        <param name="bgcolor" value="#FFFFFF">
+        <param name="quality" value="high">
+        <param name="seamlesstabbing" value="false">
+        <param name="allowscriptaccess" value="samedomain">
+        <embed type="application/x-shockwave-flash"
+          pluginspage="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
+          name="tv"
+          width="1000" height="170"
+          src="tv.swf"
+          bgcolor="#FFFFFF"
+          quality="high"
+          seamlesstabbing="false"
+          allowscriptaccess="samedomain">
+          <noembed>
+          </noembed>
+        </embed>
+      </object>
+       
+       <!-- End of Flash TV -->
+        
+    <!-- Start AD balaye site -->
+   <%-- <div id="header"><div class="wrap">
+   <div id="slide-holder">
+    <div id="slide-runner">
+    <a href=""><img id="slide-img-1" src="images/1_img.jpg" class="slide" alt="" /></a>
+    <a href=""><img id="slide-img-2" src="images/2_img.jpg" class="slide" alt="" /></a>
+    <a href=""><img id="slide-img-3" src="images/3_img.jpg" class="slide" alt="" /></a>
+    <a href=""><img id="slide-img-4" src="images/4_img.jpg" class="slide" alt="" /></a>
+    <a href=""><img id="slide-img-5" src="images/5_img.jpg" class="slide" alt="" /></a>
+    <a href=""><img id="slide-img-6" src="images/6_img.jpg" class="slide" alt="" /></a>
+	<a href=""><img id="slide-img-7" src="images/7_img.jpg" class="slide" alt="" /></a> 
+    <div id="slide-controls">
+     <p id="slide-client" class="text"><strong>آنچه به دنبال آن بودید: </strong><span></span></p>
+     <p id="slide-desc" class="text"></p>
+     <p id="slide-nav"></p>
+    </div>
+    </div>
+   </div>
+   <script type="text/javascript">
+    if(!window.slider) var slider={};slider.data=[{"id":"slide-img-1","client":"پاسخی جامع به نیازهای شما","desc":"فروشگاه تک سیستم"},{"id":"slide-img-2","client":"پاسخی جامع به نیازهای شما","desc":"فروشگاه تک سیستم"},{"id":"slide-img-3","client":"پاسخی جامع به نیازهای شما","desc":"فروشگاه تک سیستم"},{"id":"slide-img-4","client":"پاسخی جامع به نیازهای شما","desc":"فروشگاه تک سیستم"},{"id":"slide-img-5","client":"پاسخی جامع به نیازهای شما","desc":"فروشگاه تک سیستم"},{"id":"slide-img-6","client":"پاسخی جامع به نیازهای شما","desc":"فروشگاه تک سیستم"},{"id":"slide-img-7","client":"پاسخی جامع به نیازهای شما","desc":"فروشگاه تک سیستم"}];
+   </script>
+  </div></div>--%>
+    <!-- End AD balaye site -->     
+       
+        
+        
+        </td>
+        </tr>
+        <tr>
+            <td class="style2" colspan="2" dir="rtl">
+            
+            
+        <!-- Start css3menu.com BODY section -->
+ <ul id="css3menu1" class="topmenu">
+	<li class="topfirst"><a href="about.aspx" title="معرفی فروشگاه تک سیستم" style="width:161px;height:33px;line-height:33px;"><img src="css3menu1/about_ico.png" alt=""/>درباره ما</a></li>
+	<li class="topmenu"><a href="contact.aspx" title="اطلاعات مربوط به نحوه تماس با مسوولین فروشگاه جهت سفارش، سوالات و پیگیری و پشتیبانی" style="width:161px;height:33px;line-height:33px;"><img src="css3menu1/contact_ico.png" alt=""/>ارتباط با ما</a></li>
+	<li class="topmenu"><a href="help.aspx" title="نحوه استفاده از امکانات سایت فروش محصولات لوازم جانبی تک سیستم" style="width:161px;height:33px;line-height:33px;"><img src="css3menu1/help_ico.png" alt=""/>راهنمای سایت</a></li>
+	<li class="topmenu"><a href="guarantee.aspx" title="پشتیبانی و خدمات پس از فروش محصولات فروشگاه" style="width:161px;height:33px;line-height:33px;"><img src="css3menu1/guarantee_ico.png" alt=""/>گارانتی</a></li>
+	<li class="topmenu"><a href="order.aspx" title="سفارش محصولات انتخاب شده" style="width:161px;height:33px;line-height:33px;"><img src="css3menu1/order_ico.png" alt=""/>سفارش</a></li>
+	<li class="toplast"><a href="main.aspx" title="مشاهده لیستی طبقه بندی شده از محصولات لوازم جانبی کامپیوتر" style="width:161px;height:33px;line-height:33px;"><img src="css3menu1/home_ico.png" alt=""/>صفحه اصلی</a></li>
+</ul>
+        <!-- End css3menu.com BODY section -->
+
+                        
+            </td>
+        </tr>
+        <tr>
+               <td valign="top" rowspan="2">
+                
+
+
+
+
+
+<table>
+                       <tr>
+                           <td colspan="2">
+
+
+<script type="text/javascript">
+<!--
+stm_bm(["menu4734",900,"","blank.gif",0,"","",2,0,250,0,1000,1,0,0,"","",0,0,1,1,"hand","hand","",1,25],this);
+stm_bp("p0",[1,4,0,0,1,6,0,7,100,"",-2,"",-2,40,0,0,"#5D5E7C","#CFDFED","",3,0,0,"#000000","lb.png",24,196,0,"transparent","",0,"",-1,-1,0,"#cfdfed","",3,"lp.png",24,196,0,"transparent","",0,"",-1,-1,0,"#cfdfed","",3,"","","","",20,20,20,20,20,20,20,20]);
+stm_ai("p0i0",[0,"مبدل","","",-1,-1,0,"cat01.aspx","_self","","","","",0,0,0,"","",0,0,0,1,1,"#99adce",0,"#99adce",0,"","border_menu_over.jpg",3,3,0,0,"#B1BEF2","#B1BEF2","#000000","#F5FFFD","10pt Tahoma","bold 10pt Tahoma",0,0,"","","","",0,0,0],195,0);
+stm_aix("p0i1","p0i0",[0,"کابل","","",-1,-1,0,"","_self","","","","",0,0,0,"","",7,7],195,0);
+stm_bp("p1",[1,1,0,0,1,6,0,0,100,"",-2,"",-2,40,0,0,"#5D5E7C","#CFDFED","",3,0,0,"#000000"]);
+stm_aix("p1i0","p0i0",[0,"مانيتور","","",-1,-1,0,"cat0201.aspx"],220,0);
+stm_aix("p1i1","p0i0",[0,"اچ دي و ويدئو","","",-1,-1,0,"cat0202.aspx"],220,0);
+stm_aix("p1i2","p0i0",[0,"اسپيکر","","",-1,-1,0,"cat0203.aspx"],220,0);
+stm_aix("p1i3","p0i0",[0,"افزايش هدفن","","",-1,-1,0,"cat0204.aspx"],220,0);
+stm_aix("p1i4","p0i0",[0,"افزايش يو اس بي","","",-1,-1,0,"cat0205.aspx"],220,0);
+stm_aix("p1i5","p0i0",[0,"برق","","",-1,-1,0,"cat0206.aspx"],220,0);
+stm_aix("p1i6","p0i0",[0,"سريال و پارالل","","",-1,-1,0,"cat0207.aspx"],220,0);
+stm_aix("p1i7","p0i0",[0,"تعميري کيبرد و موس","","",-1,-1,0,"cat0208.aspx"],220,0);
+stm_aix("p1i8","p0i0",[0,"پرينتر","","",-1,-1,0,"cat0209.aspx"],220,0);
+stm_aix("p1i9","p0i0",[0,"شبکه","","",-1,-1,0,"cat0210.aspx"],220,0);
+stm_aix("p1i10","p0i0",[0,"کابل هاي ديگر","","",-1,-1,0,"cat0211.aspx"],220,0);
+stm_ep();
+stm_aix("p0i2","p0i0",[0,"فلش و مموري","","",-1,-1,0,"cat03.aspx"],195,0);
+stm_aix("p0i3","p0i0",[0,"هارد اکسترنال","","",-1,-1,0,"cat04.aspx"],195,0);
+stm_aix("p0i4","p0i0",[0,"آداپتور","","",-1,-1,0,"cat05.aspx"],195,0);
+stm_aix("p0i5","p0i0",[0,"باتري","","",-1,-1,0,"cat06.aspx"],195,0);
+stm_aix("p0i6","p0i0",[0,"تجهيزات شبکه","","",-1,-1,0,"cat07.aspx"],195,0);
+stm_aix("p0i7","p0i0",[0,"فن","","",-1,-1,0,"cat08.aspx"],195,0);
+stm_aix("p0i8","p0i0",[0,"محافظ برق","","",-1,-1,0,"cat09.aspx"],195,0);
+stm_aix("p0i9","p0i0",[0,"پاور","","",-1,-1,0,"cat10.aspx"],195,0);
+stm_aix("p0i10","p0i0",[0,"پاک کننده LCD","","",-1,-1,0,"cat11.aspx"],195,0);
+stm_aix("p0i11","p0i0",[0,"کارت هاي اينترنال","","",-1,-1,0,"cat12.aspx"],195,0);
+stm_aix("p0i12","p0i0",[0,"لوازم جانبي","","",-1,-1,0,"cat13.aspx"],195,0);
+stm_ep();
+stm_cf([3,0,0,"Main_frame","Navigation_frame",1]);
+stm_em();
+//-->
+</script>
+
+                              
+                           </td>
+                       </tr>
+                       <tr>
+                           <td colspan="2">
+                               <asp:Label ID="Label7" runat="server" Text="پنل کاربری" Font-Bold="True"></asp:Label>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td class="auto-style1" style="border-color: #85ADD6; background-color: #85ADD6; text-align: center;">
+                               <asp:Label ID="Label5" runat="server" Text="نام کاربری" style="text-align: center"></asp:Label>
+                           </td>
+                           <td style="border-color: #85ADD6; background-color: #85ADD6">
+                               <asp:TextBox ID="txtuser" runat="server" Width="130px" BackColor="#A8BBDB"></asp:TextBox>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td class="auto-style1" style="border-color: #85ADD6; background-color: #85ADD6; text-align: center;">
+                               <asp:Label ID="Label6" runat="server" Text="رمز عبور"></asp:Label>
+                           </td>
+                           <td style="border-color: #85ADD6; background-color: #85ADD6">
+                               <asp:TextBox ID="txtpass" runat="server" TextMode="Password" Width="130px" 
+                                   BackColor="#A8BBDB"></asp:TextBox>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td class="auto-style1" style="border-color: #85ADD6; background-color: #85ADD6; text-align: center;">
+                               <asp:HyperLink ID="HyperLink1" runat="server" 
+                                   NavigateUrl="~/registeration.aspx">ثبت نام</asp:HyperLink>
+                           </td>
+                           <td style="border-color: #85ADD6; background-color: #85ADD6; text-align: center;">
+                               <asp:Button ID="btnlogin" runat="server" Font-Names="Tahoma" Text="ورود" 
+                                   Width="91px" />
+                           </td>
+                       </tr>
+                         <tr>
+                           <td class="auto-style2">
+                               <asp:Label ID="Label11" runat="server" Text="کاربر جاری" Font-Bold="False" 
+                                   ForeColor="#006600"></asp:Label>
+                             </td>
+                           <td class="auto-style3">
+                               <asp:Label ID="lblcurrentusr" runat="server" Font-Bold="True"></asp:Label>
+                             </td>
+                       </tr>
+                        <tr>
+                           <td class="auto-style1">
+                               &nbsp;</td>
+                           <td>
+                               &nbsp;</td>
+                       </tr>
+                        <tr>
+                           <td class="auto-style1">
+                               <asp:Label ID="Label8" runat="server" Text="امروز"></asp:Label>
+                            </td>
+                           <td>
+                               
+                              <!-- Begin ParsTools.com ‍ Calendar Code -->
+                              <script language="javascript" src="http://www.parstools.com/calendar/?type=2"></script>
+                              <!-- End ParsTools.com Calendar  code -->
+                               
+                           </td>
+                       </tr>
+                       <tr>
+                           <td colspan="2" style="text-align: center">
+                               
+                           <%--<!-- Begin ToolsIR.com counter code -->
+                             <script type="text/javascript" src="http://counter.toolsir.com/secure.js"></script>
+                             <script type="text/javascript">
+	                            var order = 'total,today,yesterday,online,';
+	                            var visit = '0';
+	                           var pic = '0';
+	                           var color = '003366,ECF6FE,BCE3FD';
+	                           var url = 'http://www.tak-system.com';
+	                          var width = '120';
+	                            TIR_Counter (order,visit,pic,color,url,width);
+                            </script>
+                            <!-- End ToolsIR.com counter code -->--%>
+
+                            <!-- Begin WebGozar.com Counter code -->
+                                <script type="text/javascript" language="javascript" src="http://www.webgozar.ir/c.aspx?Code=2874364&amp;t=counter" ></script>
+                                <noscript><a href="http://www.webgozar.com/counter/stats.aspx?code=2874364" target="_blank">&#1570;&#1605;&#1575;&#1585;</a></noscript>
+                            <!-- End WebGozar.com Counter code -->
+                            </td>
+                       </tr>
+                       <tr>
+                           <td valign="top" colspan="2" style="text-align: center">
+                       
+                            <!-- Begin ToolsIR.com Weather code -->
+                             <script src="http://weather.toolsir.com/badge.php?city=32&degrees=c&bg=Trans" type="text/javascript" language="javascript"></script>
+                            <!-- End ToolsIR.com Weather code -->
+
+                            </td>
+                       </tr>
+                   </table>
+
+
+
+
+
+                
+               </td>
+            <td style="border: thin solid #3591DB; vertical-align: top;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p style="vertical-align: top">
+            </p>
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        
+        
+         <tr>
+          <td class="style6">
+          
+              </td>
+         </tr>
+                
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <a class="style5" href="main.aspx">صفحه اصلی</a> |
+                <a class="style5" href="order.aspx">سفارش</a> |
+                <a class="style5" href="guarantee.aspx"> گارانتی</a> | 
+                <a class="style5" href="help.aspx"> راهنمای سایت</a> |
+                <a class="style5" href="contact.aspx">ارتباط با ما</a> | 
+                <a class="style5" href="about.aspx">درباره ما</a></td>
+        </tr>
+        <tr>
+        <td colspan=2 class="style7">
+        
+            طراحی و پیاده سازی : <a class="style5" 
+                href="http://pazahr.blogfa.com/Profile/" target="_blank">علی پازهر</a></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
